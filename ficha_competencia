@@ -1,0 +1,119 @@
+---
+type: diseno
+producto: tuni
+area: contenido-y-actividades
+estado: propuesta
+owner: juan
+personas: [ana, leo, alan, rocio, paulina]
+trazabilidad: ./ficha-de-la-competencia--trazabilidad.md
+links:
+  - modelo-pedagogico: ../mapa/modelo-pedagogico.md
+  - objetivos-de-la-materia: ./objetivos-de-la-materia.md
+  - fuentes-de-la-materia: ./fuentes-de-la-materia.md
+  - criterios-de-la-competencia: ./criterios-competencia.md
+  - ficha-del-concepto: ./ficha-del-concepto.md
+  - definicion-operativa-ana: https://docs.google.com/document/d/11CpY1LHUyH94XPMkPl6ycgmU86QNMvzBbzTJUbAO2c0/edit
+  - research: ../research/redaccion-objetivos-y-competencias.md
+  - ejemplo: ../../campus/disenos/curso-ai-foundations.md
+actualizado: 2026-09-06
+validacion: pendiente
+---
+# La ficha de la competencia
+**Qué es este doc.** Qué es una competencia en TUNI, cómo se escribe, qué campos tiene su ficha, cómo se modifica su dificultad, cuántas tiene una materia y cómo se generan. Toma la [definición operativa de Ana](https://docs.google.com/document/d/11CpY1LHUyH94XPMkPl6ycgmU86QNMvzBbzTJUbAO2c0/edit) (3-sep) y sus cuatro correcciones a la versión anterior: la fórmula, el verificador, el desglose de saberes y la evidencia. Las preguntas del verificador están en [criterios de la competencia](./criterios-competencia.md); el ejemplo completo, en el [curso AI Foundations](../../campus/disenos/curso-ai-foundations.md).
+**Estado.** Propuesta corregida el 3-sep. Validan Juan y Ana. Falta el flujo detallado del paso.
+## 1. Qué es una competencia
+**La capacidad de combinar lo que sabe, lo que sabe hacer y su criterio para resolver un tipo de situación real.** No es información para memorizar ni un procedimiento aislado. Tres rasgos, siempre los tres:
+- **Está situada.** Se define en un contexto concreto que el alumno va a enfrentar, no en abstracto.
+- **Integra saberes.** Combina saber (conceptos), saber hacer (procedimientos) y saber decidir (juicio, actitud) a la vez, no por separado.
+- **Exige juicio, no automatismo.** El alumno decide algo que cambia según el caso; no sigue un paso a paso fijo.
+La competencia es la **capacidad**; el **desempeño** es cómo se ve cuando la demuestra. Por eso la ficha tiene enunciado y evidencia como campos distintos.
+En TUNI, además, la competencia es la carpeta que recorre el alumno, lo que sube de nivel y se corona, y lo que la organización firma y se certifica (modelo pedagógico MP5, MP6, MP16). Al docente se le explica con una imagen: *tus alumnos están acá; querés que lleguen allá; los escalones son las competencias.*
+## 2. Qué no es una competencia
+| No es… | Ejemplo que parece y no es | Por qué |
+|---|---|---|
+| Un tema o conocimiento aislado | *Conoce las partes de la célula* | Saber algo no es poder usarlo |
+| Una destreza mecánica | *Usa correctamente la regla y el compás* | Siempre se hace igual; no hay decisión |
+| Una actitud sola | *Es responsable con las entregas* | Sin saber ni saber hacer no alcanza |
+| Una actividad de aula | *Hace un mapa conceptual sobre la célula* | La actividad es el medio; la competencia es lo que demuestra |
+| La intención del docente | *Fomentar el pensamiento crítico* | Habla de quien enseña, no de quien aprende |
+| Un objetivo | *Resolver ecuaciones de segundo grado* | Infinitivo, sin situación ni finalidad: es el plano de arriba |
+## 3. Cómo se escribe
+**Tercera persona, presente, cuatro partes en este orden:**
+```
+[QUÉ HACE] + [SOBRE QUÉ] + [EN QUÉ SITUACIÓN] + [PARA QUÉ]
+```
+1. **Qué hace.** Un verbo de acción en tercera persona (*decide, arma, ajusta, formula*). Nunca infinitivo: eso es un objetivo. Nunca un verbo mental (*comprende, sabe, conoce, valora*).
+2. **Sobre qué.** El objeto: el contenido sobre el que recae la acción.
+3. **En qué situación.** Con qué herramientas, ante qué casos, con qué restricciones. De acá sale el alcance.
+4. **Para qué.** Qué problema le resuelve. Sin esto, la competencia no dice por qué importa.
+Si falta una de las cuatro, no se puede confirmar que sea una competencia. El infinitivo esconde eso: se puede escribir cualquier cosa en infinitivo sin que se note que falta la situación o el para qué.
+| ❌ Antes | ✅ Ahora |
+|---|---|
+| *Resolver ecuaciones de segundo grado* | *Resuelve un problema de su vida diaria que puede modelarse con una ecuación de segundo grado, eligiendo el método según los datos que tiene, para tomar una decisión concreta con esa información* |
+| *Usar Excel para armar presupuestos* | *Arma un presupuesto en Excel para un proyecto real con plata limitada, ajustando las fórmulas cuando cambian los datos, para decidir qué gastos priorizar* |
+| *Formular un pedido a un asistente de IA, con contexto, objetivo y formato, para una tarea de su trabajo* | *Formula un pedido a un asistente de IA con contexto, objetivo y formato, para una tarea de su trabajo, para obtener un primer resultado que le sirva sin reescribirlo* |
+Reglas cortas: un solo desempeño por competencia (si un "y" une dos cosas que se enseñan y evalúan por separado, son dos); la situación es de uso real, no de examen; los números de calidad ("en tres vueltas", "cinco casos") no van en el enunciado sino en los indicadores de logro.
+## 4. La ficha
+Ocho campos y una relación. Todos los escribe la IA; el docente edita el enunciado, la profundidad y, si quiere, el resto.
+| Campo | Qué es | Quién lo usa |
+|---|---|---|
+| `codigo` + `titulo` | C1… y tres a seis palabras para el mapa: "Pedirle bien a un asistente" | Mapa del alumno, reporting, Certificaciones |
+| `enunciado` | La competencia con la fórmula de cuatro partes. El alumno lo lee como "puedo…" | Docente, alumno, verificador, Certificaciones |
+| `incluye` / `no_incluye` | El **alcance**: qué situaciones, herramientas y casos cubre, y qué queda para otra competencia o fuera del curso | Verificador, conceptos, actividades |
+| `desglose_de_saberes` | **De qué está hecha:** qué hay que **saber** (teoría), qué hay que **saber hacer** (procedimiento) y qué hay que **saber decidir** (juicio, actitud). Una o dos líneas por cada uno | La extracción de conceptos, para no armar solo teoría; el verificador |
+| `profundidad` | Inicial · autónomo · avanzado. La vara que fija el docente (§5) | Reescritura de la ficha al mover el nivel; el verificador (filtro 4); la integradora |
+| `indicadores_de_logro` | Qué se ve cuando lo logra, y qué sería insuficiente | Rúbrica de la integradora; verificador |
+| `evidencia` | La situación en la que lo demuestra cruzando sus conceptos, y **qué se mira: el proceso, el producto o ambos** | La integradora (MP16); Certificaciones; verificador |
+| `objetivos_que_atiende` | Uno o más objetivos de la ficha de objetivos. Cobertura, no pertenencia | Matriz de cobertura |
+| → `conceptos` | Los 3 a 8 conceptos que nacen de ella | Motor; docente y alumno ven los nombres |
+**Por qué el desglose de saberes.** Sin él, quien arma los conceptos adivina de qué está hecha la competencia y puede terminar con tres conceptos de teoría y ninguno sobre cómo justificar una decisión. Ejemplo, para *"Decide si una tarea de su trabajo la hace con IA, sin IA o combinando, y lo justifica"*: saber, qué tareas son buenas candidatas y qué riesgos tiene delegar; saber hacer, comparar el resultado con y sin IA, pedirle bien; saber decidir, hacerse cargo del resultado y no delegar a ciegas. Lo escribe la IA; si el docente no lo toca, igual existe.
+**Por qué la evidencia dice qué mira.** Cuando la competencia exige juicio, muchas veces importa más cómo llegó que el resultado: evaluar a alguien que maneja solo por si llegó a destino deja pasar tres semáforos en rojo. En matemática o programación suele bastar el producto; en una competencia que pide justificar o defender, el proceso pesa más.
+No son campos: `prerrequisitos` entre competencias (los deriva el motor), `edad` o `nivel educativo` (el alcance es texto), `fuentes` (índice interno, [fuentes de la materia](./fuentes-de-la-materia.md)), una rúbrica de niveles (el dominio se deriva de los conceptos, MP14 a MP16) ni el tipo de razonamiento que activa (nadie lo consume hoy; el filtro de juicio del verificador lo cubre).
+## 5. Modificar la dificultad
+Cada competencia tiene una **profundidad**: inicial · autónomo · avanzado. Es la vara que fija el docente (MP11). Él la ve como "qué tan difícil"; en la ficha el campo se llama `profundidad` porque "dificultad" ya nombra la graduación de las actividades (MP1). Por defecto la infiere la IA de la audiencia: quiénes son y con qué punto de partida llegan ([ficha de objetivos](./objetivos-de-la-materia.md) §5). Adultos sin formación técnica arrancan en inicial o autónomo.
+**Qué hay detrás de los tres niveles.** Dos diales que, para el docente, se mueven juntos:
+| Dial | Inicial | Autónomo | Avanzado |
+|---|---|---|---|
+| **Autonomía**: cuánta ayuda tiene | Con una guía, plantilla o lista de control a la vista | Solo | Solo, y corrige o guía a otros |
+| **Complejidad**: qué tan abierta es la situación | Un caso típico, con un camino claro | Casos habituales con variaciones; elige entre pocos caminos | Un problema abierto, con restricciones que compiten |
+**Qué cambia al mover cada dial.** El objeto no cambia nunca: la competencia sigue siendo sobre lo mismo. Partiendo de la autónoma *"Decide, ante una tarea de su trabajo, si la hace con IA, sin IA o combinando, y lo justifica, para delegar lo que conviene y quedarse con lo que importa"*:
+| Si se mueve… | El enunciado queda | Qué cambió |
+|---|---|---|
+| Solo la autonomía, hacia abajo | *Decide, **con una lista de preguntas guía**, ante una tarea de su trabajo, si la hace con IA, sin IA o combinando, para…* | Aparece el apoyo en la situación. El caso es el mismo |
+| Solo la complejidad, hacia arriba | *Decide, **ante un proceso de su área con varias tareas encadenadas**, cuáles hace con IA, cuáles no y en qué orden, para…* | La situación se abre y hay más de una decisión. Sigue solo |
+| Los dos hacia abajo: **inicial** | *Identifica, con una guía, qué parte de una tarea de su trabajo conviene pedirle a un asistente de IA, para empezar a usarlo sin perder tiempo* | Verbo más chico, apoyo a la vista, un solo caso típico |
+| Los dos hacia arriba: **avanzado** | *Rediseña un proceso de su área decidiendo qué tareas delegar a IA y con qué controles, para que el equipo gane tiempo sin perder el control del resultado* | Verbo más exigente y problema abierto. Que guíe a otros se pide en la evidencia: defiende el rediseño ante su equipo |
+En la ficha, la **autonomía** mueve el apoyo que nombra la situación, lo que cuenta como suficiente en los indicadores y ante quién se demuestra en la evidencia. La **complejidad** mueve el verbo, cuántos casos entran en `incluye` (inicial manda las excepciones a `no_incluye`; avanzado las incluye), cuánto pesa el saber decidir en el desglose y si la evidencia mira el producto o también el proceso.
+**El mecanismo para el docente.** Al revisar las competencias (§8, paso 7) ve cada una con su nivel y un control de tres posiciones. Si lo mueve, la IA reescribe enunciado, alcance, desglose, indicadores y evidencia al nuevo nivel y le muestra la versión anterior y la nueva; confirma o vuelve. Si en vez de mover el control edita el enunciado a mano y le queda a otro nivel, el verificador se lo dice y le ofrece las dos salidas: mover el control, o volver al nivel declarado con el enunciado reescrito ([criterios](./criterios-competencia.md) filtro 4). Mover una competencia no toca a las otras; el verificador de conjunto avisa si el orden de exigencia dejó de ser creciente. Se mueve antes de extraer los conceptos.
+La **profundidad** es la vara; el **dominio** (Nuevo → Dominado) es cuánto avanzó cada alumno contra esa vara. Mover el control no toca el dominio.
+**Puede no entrar en la v1.** Sin el control, cada competencia igual tiene una profundidad, la que infirió la IA. El docente la ve pero no la mueve; si edita el enunciado a otro nivel, el nivel se ajusta a lo que escribió y se regenera el resto de la ficha. La lógica de esta sección vale igual.
+## 6. Cuántas competencias tiene una materia
+Una competencia agrupa **de 3 a 8 conceptos** y se logra en semanas. Si pide la carrera entera, se parte; si cabe en una clase, es un concepto.
+**La cantidad no se elige: sale de aplicar la definición a los objetivos.** Por cada objetivo, una competencia por capacidad con evidencia propia. El **test de partición** decide: dos cosas que se enseñan y evalúan por separado → dos; una evidencia con "o" → dos; una parte que se puede dominar sin la otra → dos; dos candidatas que se demuestran igual → una.
+| Señal | Qué suele indicar |
+|---|---|
+| Lo esperable | 8 a 16 por materia; límites 6 y 20 |
+| Menos de 6 | Probablemente enunciados paraguas, o es un taller |
+| Más de 20 | Probablemente dos que se demuestran igual, o dos materias |
+| Por objetivo | Al menos 2; más de 6 suele ser un objetivo doble |
+El tope de 20 es una decisión de producto: el alumno recorre competencias y adentro conceptos, y con más carpetas ese árbol se pierde ([research](../research/redaccion-objetivos-y-competencias.md) H12).
+## 7. Qué hereda el concepto
+El alcance de la competencia **no se copia entero a cada concepto: se reparte.** Cada concepto nace de una parte del desglose de saberes (un saber, o un pedazo de uno) y toma el `incluye` que le corresponde. El `no_incluye` sí se hereda entero: lo que la competencia no cubre, ningún concepto suyo lo cubre. La profundidad fija hasta dónde llega la idea central de cada concepto. Así el mismo concepto "costo variable" tiene alcance distinto bajo una competencia inicial que bajo una avanzada.
+## 8. Cómo se generan
+Entrada: la ficha de objetivos firmada y las fuentes indexadas. Salida: la lista de competencias con ficha completa, **ya verificada**, para que el docente la revise.
+1. Por cada objetivo, listar las situaciones reales en que el participante lo cumple: qué haría, dónde, con qué. Son las candidatas.
+2. Si hay programa, mapear sus temas y consignas a las candidatas; lo que sobra y lo que falta se le muestra al docente ([fuentes de la materia](./fuentes-de-la-materia.md) §4).
+3. Si hay un marco público (CEFR, DigComp, AILit), tomar sus enunciados como plantilla.
+4. Redactar cada candidata con la fórmula, a la profundidad inferida de la audiencia; escribir alcance, desglose, indicadores y evidencia.
+5. Correr el **verificador individual** sobre cada ficha y corregir lo devuelto. Nada llega al docente sin pasar.
+6. Aplicar el test de partición, ordenar por exigencia creciente y correr el **verificador de conjunto**: cobertura, exclusividad, progresión, grano, tamaño.
+7. Presentar al docente: título, enunciado y nivel de dificultad a la vista; alcance, desglose y evidencia al desplegar. Firma.
+**Si el docente edita.** Su versión pasa por el verificador individual. Si no cumple, ve una advertencia con la versión corregida y elige. Si insiste, se toma la suya y queda marcada; no se le insiste más de una vez (MP13).
+## 9. Quién ve qué
+El **docente** ve título, enunciado y el control de dificultad; al desplegar, alcance, desglose y evidencia. Los indicadores y la matriz de cobertura son internos. El **alumno** ve título y "puedo…" con su nivel y cobertura, y adentro los nombres de sus conceptos. El **contenidista** externo entrega la ficha completa ([entregable](../../campus/disenos/entregable-contenidista.md)).
+## Pendientes
+- Ana revisa las doce fichas del [ejemplo](../../campus/disenos/curso-ai-foundations.md) con esta versión y marca dónde el verificador se separa de su criterio.
+- Cómo se reparte el desglose entre conceptos cuando un saber da para más de un concepto, y quién decide el corte. Se define con la extracción de conceptos. — Juan con Alan.
+- Si tres niveles de profundidad alcanzan o el docente necesita los dos diales separados. — Juan con Ro.
+- Si el control de dificultad entra en la v1. — Juan.
+- Qué se recalcula al mover el nivel con conceptos ya extraídos. Se resuelve construyendo.
